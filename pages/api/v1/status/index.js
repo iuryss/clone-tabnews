@@ -20,6 +20,7 @@ async function status(request, response) {
 
   response.status(200).json({
     updated_at: updatedAt,
+    env_test: process.env.NODE_ENV,
     dependencies: {
       database: {
         version: version,
